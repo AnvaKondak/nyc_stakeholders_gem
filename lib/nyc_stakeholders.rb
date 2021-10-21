@@ -28,8 +28,14 @@ module NycStakeholders
           stakeholders = Unirest.get("https://data.cityofnewyork.us/resource/eddp-3v5g.json")
           .body
           .map {|stakeholder| stakeholder["rank_title"] }
-         puts stakeholders.uniq.max_by { |n| stakeholders.count(n) } 
-         puts stakeholders.uniq.map { |n| stakeholders.count(n) }.max 
+         stakeholders.uniq.max_by { |n| stakeholders.count(n) } 
+        end
+
+        def self.maxjobcount 
+          stakeholders = Unirest.get("https://data.cityofnewyork.us/resource/eddp-3v5g.json")
+          .body
+          .map {|stakeholder| stakeholder["rank_title"] }
+          stakeholders.uniq.map { |n| stakeholders.count(n) }.max 
         end
   end
 end

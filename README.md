@@ -1,8 +1,6 @@
 # NycStakeholders
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nyc_stakeholders`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This tool processess NYC JSON data and returns stakeholder objects with properties job role and gender, along with role frequency stats.
 
 ## Installation
 
@@ -22,9 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-`stakeholders = NycStakeholders::Stakeholder.all`
-`stakeholders = NycStakeholders::Stakeholder.find('<rank_title>')`
-`stakeholders = NycStakeholders::Stakeholder.freqjob')`
+`stakeholders = NycStakeholders::Stakeholder.all` <br>
+`stakeholders = NycStakeholders::Stakeholder.find('<rank_title>')` <br>
+`stakeholders = NycStakeholders::Stakeholder.freqjob')` <br>
 
 ## Development
 

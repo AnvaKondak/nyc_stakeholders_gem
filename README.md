@@ -1,6 +1,6 @@
 # NycStakeholders
 
-This tool processes NYC JSON data and returns stakeholder objects with properties job role and gender, along with role frequency stats.
+This tool processes NYC JSON data and returns stakeholder objects with properties job role and gender, along with rank title stats.
 
 ## Installation
 

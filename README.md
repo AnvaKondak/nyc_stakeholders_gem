@@ -22,7 +22,9 @@ Or install it yourself as:
 
 ## Usage
 
-stakeholders = NycStakeholders::Stakeholder.all
+`stakeholders = NycStakeholders::Stakeholder.all`
+`stakeholders = NycStakeholders::Stakeholder.find('<rank_title>')`
+`stakeholders = NycStakeholders::Stakeholder.freqjob')`
 
 ## Development
 
